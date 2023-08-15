@@ -15,9 +15,7 @@ const {handleSubmit, handleReset} = useForm ({
     return  !todos.value.map((t)=> t.text).includes(value)
     }
   ),
-
  }),
-
 });
 
 const todos = ref([]);
@@ -49,10 +47,10 @@ const remove = (todoItem) => {
 </script>
 
 <template>
-  <main class="text-black overflow-y-scroll h-screen flex items-center justify-center">
+  <main class="text-white overflow-y-scroll h-screen flex items-center justify-center bg-black">
     <main class="h-screen flex items-center justify-center">
       <div class="w-[50rem] min-w-fit rounded overflow-hidden shadow-lg">
-        <form class="mb-10" @submit.prevent="onSubmit" novalidate>
+        <form class="mb-10 text-black" @submit.prevent="onSubmit" novalidate>
           <FormInput name="todo" placeholder=" What ?" />
         </form>
         <div class="grid grid-cols-12 gap-4">
