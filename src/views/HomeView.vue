@@ -52,7 +52,7 @@ const remove = (todoItem) => {
             name="todo"
             placeholder=" What ?" />
         </form>
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
+        <div class="grid grid-cols-2 md:grid-cols-12 gap-4">
           <div class="col-span-6">
             <TodoCard
               v-for="todoItem in incompleteTodos"
